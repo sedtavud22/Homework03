@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #fafafa;
+}
+
+header {
+  min-height: 9vh;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10rem;
+  margin-bottom: 10vh;
+}
+
+header > * {
+  min-width: 250px;
+}
+
+header img {
+  width: 30px;
+}
+
+.banner img {
+  width: 25px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.banner > p {
+  font-size: 1.5rem;
+}
+
+.navsite {
+  display: flex;
+  gap: 2rem;
+}
+
+.navsite > a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navlogin {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-img {
+  cursor: pointer;
+}
+
+.cart {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.noti {
+  position: absolute;
+  left: 60%;
+  background-color: red;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  color: white;
+  font-size: 8px;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+}
+.member > a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  min-height: 81vh;
+  padding-inline: 10rem;
+}
+
+main > h1 {
+  margin-bottom: 5vh;
+}
+
+.shop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  width: 48.5%;
+  gap: 5vh;
+}
+
+.items {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  gap: 5%;
+}
+
+.trashframes {
+  width: 5vh;
+  min-height: 5vh;
+  border: 1px solid #61EDBA;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.trashframes > img {
+  width: 60%;
+}
+
+.item-pic1 {
+  background: rgb(0,177,255);
+  background: linear-gradient(225deg, rgba(0,177,255,1) 0%, rgba(0,177,255,0.5) 20%, rgba(0,177,255,0.5) 45%, rgba(0,177,255,1) 75%, rgba(0,177,255,1) 100%);
+  width: 20vh;
+  min-height: 20vh;
+  border-radius: 15px;
+}
+
+.item-pic-info {
+  margin: 15% 0 0 8%;
+}
+
+.pic-logo {
+  width: 5vh;
+  min-height: 5vh;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5vh;
+}
+
+.pic-logo > img {
+  width: 60%;
+}
+
+.item-pic-info > h3 {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 1vh;
+}
+
+.item-pic-info > p {
+  font-size: 12px;
+  font-weight: 300;
+  color: white;
+}
+
+.item-pic2 {
+  background: rgb(255,183,0);
+  background: linear-gradient(225deg, rgba(255,183,0,1) 0%, rgba(255,183,0,0.5) 20%, rgba(255,183,0,0.5) 45%, rgba(255,183,0,1) 75%, rgba(255,183,0,1) 100%);
+  width: 20vh;
+  min-height: 20vh;
+  border-radius: 15px;
+}
+
+.item-info > p {
+  font-size: 1.5rem;
+  margin-bottom: 1vh;
+}
+
+.item-info > p:last-child {
+  font-size: 1.2rem;
+  color: #678394;
+}
+
+.item-attribute {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 3vh;
+}
+
+.item-attribute > select {
+  border: none;
+  padding: 0.5vh;
+  font-size: 2vh;
+  min-height: 4vh;
+  color: #bbbbbb;
+  cursor: pointer;
+}
+
+select:focus {
+  border: 2px solid #61EDBA;
+}
+
+.counts {
+  background-color: #dddddd;
+  width: 2vh;
+  height: 2vh;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.counts:first-child {
+  background-color: #61EDBA;
+}
+
+.checkout {
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+  width: 48.5%;
+  padding: 3% 2.5%;
+  margin-bottom: 10vh;
+}
+
+.checkout > h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4vh;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4vh;
+}
+
+.subtotal > p:first-child {
+  font-size: 1.2rem;
+  color: rgba(67, 83, 94, 0.6);
+}
+
+.subtotal > p:last-child {
+  font-size: 1.2rem;
+  color: #678394;
+}
+
+.coupon > img {
+  width: 4vh;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+
+input {
+  background-color: transparent;
+  padding: 0.75rem;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  width: 60%;
+}
+
+form > button {
+  background-color: transparent;
+  padding: 0.75rem;
+  border: 2px solid #61EDBA;
+  border-radius: 15px;
+  font-weight: 700;
+  color: #61EDBA;
+  width: 25%;
+  cursor: pointer;
+}
+
+.total-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4vh;
+  border-top: 1px solid #dddddd;
+  margin-bottom: 4vh;
+}
+
+.total-payment > p:first-child {
+  font-size: 1.2rem;
+}
+
+.total-payment > p:last-child {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #61EDBA;
+}
+
+.checkout > button {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: #61EDBA;
+  padding: 0.75rem;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  font-weight: 700;
+  box-shadow: 4px 8px 14px 1px rgba(97,237,186,0.43);
+}
