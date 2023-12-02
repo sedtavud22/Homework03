@@ -325,4 +325,5 @@ form > button {
   border-radius: 15px;
   font-weight: 700;
   box-shadow: 4px 8px 14px 1px rgba(97,237,186,0.43);
+  cursor: pointer;
 }
